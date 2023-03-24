@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* VH solved the background gradient not filling the page */
+    overflow-y: hidden;
+}
+
+.night {
+    height: 80vh;
+    width: 70vw;
+    margin: 5rem auto;
+    border: 5px solid purple; 
+    margin: 5rem auto;
+    background: url(/images/assets/Img_1.png);
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+}
+
+.surface {
+    height: 140px;
+    width: 500%;
+    background: url(/images/assets/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x; /* repeat-x repeats image horizontally */
+}
+
