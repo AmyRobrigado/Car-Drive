@@ -18,6 +18,7 @@ body{
     position: relative;
     box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
     overflow-x: hidden;
+    
 }
 
 .surface {
@@ -29,5 +30,31 @@ body{
     bottom: 0%;
     left: 0%;
     background-repeat: repeat-x; /* repeat-x repeats image horizontally */
+    animation: moveRight 1s linear infinite;
 }
 
+.car {
+    position: absolute; 
+    bottom: 5.5%;  /* higher numbers brings the image higher & lower numbers bring the image lower */
+    left: 24%; 
+}
+
+/* Animation */
+
+@keyframes moveRight{
+    100% {
+        transform: translateX(-295px);
+    }
+}
+
+@keyframes suspension{
+    100%{
+        transform: translateY(-1px); 
+    }
+    50%{
+        transform: translateY(2px); 
+    }
+    0%{
+        
+    }
+}
